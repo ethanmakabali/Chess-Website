@@ -32,7 +32,7 @@ header div {
 }
  
 header h2 { 
-    font-size: 500%;
+    font-size: 1000%;
     margin-bottom: 10px;
     font-style: inherit;
     color: Black;
@@ -133,12 +133,12 @@ h1 {
     font-size: 400%;
     margin-bottom: 10px;
     margin: 10px;
-    padding-left: 4.85em;
+    text-align: justify;
+    padding-left: 5.5em;
     font-style: inherit;
     font-style: italic;
     color: Black;
     text-shadow: 2px 2px 2px limegreen;
-    /* text-align: center; */
 }
 
 section a:link, section a:visited {
@@ -185,14 +185,23 @@ main {
     gap: 1em;
 }
 
-section { 
-    max-width: 50%;
-    margin: 80px;
-    margin-top: 20px;
-    margin-bottom: 1px;
+section {
+    max-width: 600px; /* Set maximum width for the section */
+    margin: 0 auto; /* Auto margin for centering */
+    padding: 0 20px; /* Add padding to avoid content sticking to the edges */
     font-size: 20px;
     font-weight: bold;
+    text-align: center; /* Center align the content */
+    margin-top: 20px;
+    margin-bottom: 1px;
 }
+
+#video {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 #nav_list { 
     max-width: 20%;
@@ -249,8 +258,13 @@ main h2 {
 
 section h3 {
     padding-bottom: .25em;
+    text-align: center;
     /* margin-left: 20px; */
 }
+
+/* .blockquote h3{
+    color: green;
+} */
 
 main p {
     margin: 0 0 2em;
@@ -293,7 +307,6 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
   }
   
 
@@ -302,165 +315,18 @@ footer p {
     max-width: 600px;
     min-height: 400px;
     max-height: 400px;
-    align-items: center;
     border: 5px solid rgb(3, 252, 227); 
 }
 
 .container {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto;
-    margin-left: auto;
-}
-
-#cornerBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    padding: 1em 2em;
-    background-color: darkblue;
-    border-radius: 10px;
-    border: limegreen(255, 0, 0, 0.406);
-    color: yellow;
-    font-size: 120%;
-    font-weight: bold;
-    cursor: pointer;
-    transition: ease-in-out;
-}
-
-#cornerBtn:hover {
-    background-color: green;
-    color: black;
-    border: 2px ridge goldenrod;
-}
-
-/* Countdown */
-
-.mainclock {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: flex-end;
-    font-size: 500px;
-    margin-left: 1em;
-}
-
-
-.digitalclock {
-    display: flex;
-    flex-direction: row;
-    gap: 0.25em;
-    margin-left: 1em;
-    font-size: 50px;
-}
-
-#minute, #colon1, #second {
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-    text-shadow: 2px 2px 2px green;
-}
-
-#countDown {
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-    text-shadow: 2px 2px 2px green;
-    margin-left: 1em;
-}
-
-/*********************************************
- * MEDIA QUERY: RESPONSIVE DESIGN            *
- *                                           *
- * This media query adjusts the styles for   *
- * smaller screens, such as smartphones,     *
- * to ensure optimal display and usability.  *
- * and makes appropriate adjustments to      *
- * elements like font sizes, padding, and    *
- * layout to maintain a user-friendly        *
- * experience on smaller devices.            *
- *********************************************/
-
-@media screen and (max-width: 962px) {
-    /* Adjustments for smaller screens */
-    .carousel-image {
-        align-items: center;
-        min-width: 400px;
-        max-width: 400px;
-        min-height: 300px;
-        max-height: 300px;
-    }
-    h1 {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 819px) {
-    #asideleft img {
-        max-height: 135px; /* Reduce the maximum height of images */
-        max-width: 135px; /* Reduce the maximum width of images */
-    }
-    header h2{
-        font-size: 200%;
-        text-align: center;
-    }
-    header img{
-        max-width: 100px;
-    }
-}
-
-@media screen and (max-width: 787px) {
-    /* Adjustments for smaller screens */
-    #asideright {
-        font-size: 10px;
-        padding-right: 5em;
-    }
-    #asideright p{
-        font-size: 10px;
-    }
-    #asideright img{
-        max-height: 135px; /* Reduce the maximum height of images */
-        max-width: 135px; /* Reduce the maximum width of images */
-    }
-    section {
-        font-size: 10px;
-    }
-    header h3 {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 760px) {
-    /* Adjustments for smaller screens */
-    .carousel-image {
-        align-items: center;
-        min-width: 300px;
-        max-width: 300px;
-        min-height: 200px;
-        max-height: 200px;
-    }
-    h1 {
-        text-align: center;
-        font-size: 25px;
-        padding-left: 1em;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    /* Adjustments for smaller screens */
-    .carousel-image {
-        align-items: center;
-        min-width: 200px;
-        max-width: 200px;
-        min-height: 150px;
-        max-height: 150px;
-    }
-    #navmenu
+    margin-left: 20em;
 }
 
 /* Media Query for Responsive Design */
 @media screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
     header h2 {
         font-size: 28px;
     }
@@ -468,6 +334,10 @@ footer p {
     header h3 {
         font-size: 18px;
     }
+    
+    /* h1{
+        text-align: justify;
+    } */
 
     #nav_menu ul li a {
         padding: 8px 16px;
@@ -497,36 +367,83 @@ footer p {
         max-width: 150px; /* Reduce the maximum width of images */
     }
     #asideright img {
-        max-height: 80px; /* Reduce the maximum height of images */
-        max-width: 80px; /* Reduce the maximum width of images */
-        min-height: 80px; /* Reduce the maximum height of images */
-        min-width: 80px; /* Reduce the maximum width of images */
+        max-height: 5px; /* Reduce the maximum height of images */
+        max-width: 5px; /* Reduce the maximum width of images */
+        min-height: 5px; /* Reduce the maximum height of images */
+        min-width: 5px; /* Reduce the maximum width of images */
     }
 }
 
-@media screen and (max-width: 560px) {
+ 
+/*********************************************
+ * MEDIA QUERY: RESPONSIVE DESIGN            *
+ *                                           *
+ * This media query adjusts the styles for   *
+ * smaller screens, such as smartphones,     *
+ * to ensure optimal display and usability.  *
+ * and makes appropriate adjustments to      *
+ * elements like font sizes, padding, and    *
+ * layout to maintain a user-friendly        *
+ * experience on smaller devices.            *
+ *********************************************/
+ @media screen and (max-width: 962px) {
     /* Adjustments for smaller screens */
-    .carousel {
-        margin-top: 1em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; /* Add this line to center the carousel horizontally */
-        max-width: 100%;
+    h1 {
+        font-size: 50px;
     }
-    .carousel-image {
-        margin-top: 1em;
-        align-items: center;
-        justify-content: center;
-        min-width: 200px;
-        max-width: 200px;
-        min-height: 100px;
-        max-height: 100px;
-        padding-right: 1em;
+}
+
+@media screen and (max-width: 819px) {
+    header h2{
+        font-size: 200%;
+        text-align: center;
     }
+    header img{
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    /* Adjustments for smaller screens */
+    section {
+        font-size: 10px;
+    }
+    header h3 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    /* Adjustments for smaller screens */
     h1 {
         text-align: center;
         font-size: 25px;
         padding-left: 1em;
+    }
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+    header h2 {
+        font-size: 28px;
+    }
+    
+    header h3 {
+        font-size: 18px;
+    }
+
+    #nav_menu ul li a {
+        padding: 8px 16px;
+    }
+
+@media screen and (max-width: 560px) {
+    /* Adjustments for smaller screens */
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        padding-left: 1em;
+    }
+    #asideleft{
+        font-size: 5pz;
     }
 }
