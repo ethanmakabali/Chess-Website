@@ -324,6 +324,28 @@ footer p {
     margin-left: 20em;
 }
 
+#cornerBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 1em 2em;
+    background-color: darkblue;
+    border-radius: 10px;
+    border: limegreen(255, 0, 0, 0.406);
+    color: yellow;
+    font-size: 120%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+#cornerBtn:hover {
+    background-color: green;
+    color: black;
+    border: 2px ridge goldenrod;
+}
+
 /* Media Query for Responsive Design */
 @media screen and (max-width: 600px) {
     /* Adjustments for smaller screens */
