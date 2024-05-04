@@ -32,7 +32,7 @@ header div {
 }
  
 header h2 { 
-    font-size: 500%;
+    font-size: 1000%;
     margin-bottom: 10px;
     font-style: inherit;
     color: Black;
@@ -133,12 +133,12 @@ h1 {
     font-size: 400%;
     margin-bottom: 10px;
     margin: 10px;
-    padding-left: 4.85em;
+    text-align: justify;
+    padding-left: 5.5em;
     font-style: inherit;
     font-style: italic;
     color: Black;
     text-shadow: 2px 2px 2px limegreen;
-    /* text-align: center; */
 }
 
 section a:link, section a:visited {
