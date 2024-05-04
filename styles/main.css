@@ -566,15 +566,55 @@ footer p {
         padding-left: 1em;
     }
     #asideleft {
-        max-width: 10%; /* Reduce the maximum width of the aside */
+        max-width: 5%; /* Reduce the maximum width of the aside */
     }
     #asideright {
-        max-width: 10%; /* Reduce the maximum width of the aside */
+        max-width: 5%; /* Reduce the maximum width of the aside */
         margin: 1em;
         padding-right: 1em;
     }
     section {
-        max-width: 25%; /* Reduce the maximum width of the section */
+        max-width: 10%; /* Reduce the maximum width of the section */
+    }
+    main{
+        gap: 0.1em;
+    }
+}
+@media screen and (max-width: 425px) {
+    /* Adjustments for smaller screens */
+    .carousel {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center the carousel horizontally */
+        max-width: 100%;
+    }
+    .carousel-image {
+        margin-top: 1em;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px; /* Set the minimum width */
+        max-width: 200px; /* Set the maximum width */
+        min-height: 100px; /* Set the minimum height */
+        max-height: 100px; /* Set the maximum height */
+        padding-right: 1em;
+    }
+    h1 {
+        text-align: center;
+        font-size: 25px;
+        padding-left: 1em;
+    }
+    #asideleft {
+        max-width: 2%; /* Reduce the maximum width of the aside */
+    }
+    #asideright {
+        max-width: 2%; /* Reduce the maximum width of the aside */
+        margin: 1em;
+        padding-right: 1em;
+    }
+    section {
+        max-width: 10%; /* Reduce the maximum width of the section */
     }
     main{
         gap: 0.1em;
